@@ -14,8 +14,8 @@ public class ParkingServiceImpl implements ParkingService {
   @Autowired
   ParkingRepository parkingRepository;
 
-  public ParkingSlot save(ParkingSlot article) {
-    return parkingRepository.save(article);
+  public ParkingSlot save(ParkingSlot parkingSlot) {
+    return parkingRepository.save(parkingSlot);
   }
 
   

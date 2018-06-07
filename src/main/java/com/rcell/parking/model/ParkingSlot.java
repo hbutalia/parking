@@ -33,12 +33,18 @@ public class ParkingSlot implements Serializable {
 
 	@Column(name = "status")
 	String status;
+	
+	@Column(name = "address")
+	String address;
+	
 
-	@Column(name = "usagestarttime")
-	Long usageStartTime;
+	public String getAddress() {
+		return address;
+	}
 
-	@Column(name = "usageendtime")
-	Long usageEndTime;
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	public Long getSlotId() {
 		return slotId;
@@ -62,22 +68,6 @@ public class ParkingSlot implements Serializable {
 
 	public void setStatus(String status) {
 		this.status = status;
-	}
-
-	public Long getUsageStartTime() {
-		return usageStartTime;
-	}
-
-	public void setUsageStartTime(Long usageStartTime) {
-		this.usageStartTime = usageStartTime;
-	}
-
-	public Long getUsageEndTime() {
-		return usageEndTime;
-	}
-
-	public void setUsageEndTime(Long usageEndTime) {
-		this.usageEndTime = usageEndTime;
 	}
 
 }
